@@ -1,0 +1,154 @@
+
+
+#big-video {
+    position: relative;
+    background: #000;
+    overflow: hidden;
+    height: 540vh;
+	
+}
+
+#big-video .video {
+    z-index: 1;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 0;
+    padding-bottom: 56.25%;
+}
+
+#big-video video {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+
+#big-video .video-element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
+.hero-content-container {
+	position: absolute;
+	top: 37vh;
+	left:50%;
+	z-index: 100;
+	transform: translate(-50%);
+	text-align: center;
+	width: 100%;
+	font-family: 'Raleway', sans-serif;
+	h1 {
+	margin-bottom: .25em;
+	color: white;
+	font-family: 'Raleway', sans-serif;
+	font-weight: 400;
+	font-size: 1.8em;
+//	height: 100%;
+
+	}
+}
+
+.section-1, .section-2, .section-3,  .section-4, .section-5 {
+	height: 100vh;
+	font-size: 1.5em;
+	color: white;
+	padding: 0 2em;
+	max-width: 75vw;
+	margin: 0 auto;  
+}
+
+.kickstarter-link {
+	padding: .5em 1em;
+	font-size: .8em;
+	color: white;
+	display: inline-block;
+	margin-top:.3em;
+	transition: background-color 1s ease;
+	background-color: $tertiary-color;
+}
+
+.kickstarter-link:hover {
+	background-color: $main-transparent;
+}
+
+.section-2 {
+	top: 700px;
+//	position: absolute;
+}
+
+.section-3 {
+	top: 1400px;
+}
+
+.section-4 {
+	font-size: .9em;
+	position: relative;
+	padding-top: 4em;
+	height: 100vh;
+}
+
+.form-content-wrap {
+	margin-top: 18em;
+}
+
+.sign-up-form-1 {
+	input {
+		padding: .7em .5em;
+		border: none;
+		display: inline-block;
+		font-size: 1.1em;
+		background-color: rgba(24,140,146,.2);
+		margin: 0 .5em .5em 0;
+		border-radius:.1em;
+		width: 13em;
+		border: $main-color 1px solid;
+		font-family: 'Raleway', sans-serif;
+//		outline: #AA2B69;
+	}
+	
+		textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, button:focus {   
+    border-color: rgba(170, 43, 105, 0.8);
+    box-shadow: 0 1px 1px rgba(170, 43, 105, 0.075) inset, 0 0 8px rgba(170, 43, 105, 0.6);
+    outline: 0 none;
+		}
+	button {
+	 background-color: $tertiary-color;
+	 border: none;
+	 color: white;
+	padding: .7em 1.5em;
+	font-size: 1.1em;
+	border-radius:.1em;
+	font-family: 'Raleway', sans-serif;
+	transition: 1s ease background-color;	
+	}
+	button:hover {
+	background-color:$main-color;
+	}
+}
+
+	
+	
+	
+
+
+@media screen and (max-width: 887px) {
+	.hero-container {
+		h1, p {
+				text-align: center;	
+		}
+		
+		.hero-image-container {
+			margin-right: 0;
+		}
+	
+	}
+}

@@ -1,11 +1,25 @@
+
+$font-video:'Press Start 2P', cursive; 
+$font-two:'Ubuntu', sans-serif;
+$token-yellow: #FED860;
+$font-main: 'Ubuntu', sans-serif;
+$main-color: #188C9D;
+$secondary-color: #D0280B;
+$tertiary-color: rgb(170,43, 105);
+$teritary-transparent: rgba(170,43,105, .4);
+$main-transparent: rgba(24,140,157,.3);
+
+
+
+
 body {
     font-family: sans-serif;
-    line-height: 1.4em;
+    line-height: 1.4;
     background: #FFF;
     color: #444;
 }
 
-h1 { font-size: 2em; margin: .67em 0 }
+h1 { font-size: 2em; margin: 0;  }
 h2 { font-size: 1.5em; margin: .75em 0 }
 h3 { font-size: 1.17em; margin: .83em 0 }
 h5 { font-size: .83em; margin: 1.5em 0 }
@@ -23,4 +37,15 @@ p {
 a {
   color: #00AAEE;
   text-decoration: none;
+	font-family: $font-main;
 }
+
+
+
+.white {
+	color: white;
+}
+
+//.green {
+//	color:lawngreen;
+//}

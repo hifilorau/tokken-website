@@ -1,6 +1,6 @@
 
 /*desktop nav */
-$font-video:'Press Start 2P', cursive; 
+$font-video:'Press Start 2P', cursive;
 $font-main: 'Ubuntu', sans-serif;
 
 .desktop-nav-container {
@@ -8,7 +8,7 @@ $font-main: 'Ubuntu', sans-serif;
 	background-color: green;
 	min-height: 90px;
 	top: 0;
-	left: 0; 
+	left: 0;
 	right: 0;
 }
 
@@ -18,8 +18,8 @@ $font-main: 'Ubuntu', sans-serif;
   flex-direction: row;
   justify-content: flex-end;
 	min-height: 90px;
-	    position: relative;
-    z-index: 1000;
+	position: relative;
+  z-index: 1000;
 //	max-width: 46rem;
 //	padding-left: 8%;
 //	float: right;
@@ -31,14 +31,14 @@ $font-main: 'Ubuntu', sans-serif;
 //	  padding-left: 6em;
 	a{
   	font-family: 'Raleway';
-		color: rgba(255,255,255,.3);
+		color: $tertiary-color;
 		font-size: 1.2em;
-		margin-right: 2em;
+		margin-right: 4em;
 		font-weight: 400;
 		text-transform: uppercase;
 		transition: color 1s ease;
 	}
-	
+
 	a:hover {
 		color: rgba(24,144,157,.5);
 	}
@@ -47,7 +47,7 @@ $font-main: 'Ubuntu', sans-serif;
 .desk-nav-item:first-child {
 	margin-right: auto;
 	float: left;
-	margin-left: 1.5em;
+	margin-left: 4em;
 }
 
 .nav-logo {
@@ -56,7 +56,7 @@ $font-main: 'Ubuntu', sans-serif;
 //	margin-left: 35px;
 	img {
 		margin-top: -25px;
-		height: 55px;
+		height: 40px;
 		width: auto;
 	}
 }
@@ -95,10 +95,21 @@ $font-main: 'Ubuntu', sans-serif;
   bottom: 0;
   left: 0;
   z-index: 0;
-  
+
   /* non-critical appearance styles */
   list-style: none;
   background: #111;
+  display: none;
+}
+
+.mobile-header-logo {
+  position: absolute;
+  top: 2%;
+  left: 50%;
+  transform: translate(-50%);
+  z-index: 10000000;
+  width: 60px;
+  height: auto;
   display: none;
 }
 
@@ -137,7 +148,7 @@ $font-main: 'Ubuntu', sans-serif;
   bottom: 100%;
   left: 0;
   z-index: 1;
-  
+
   /* non-critical apperance styles */
   padding:  0;
 
@@ -153,9 +164,9 @@ $font-main: 'Ubuntu', sans-serif;
 label[for="nav-trigger"] {
   /* critical positioning styles */
   position: fixed;
-  left: 15px; top: 15px;
+  left: 15px; top: 25px;
   z-index: 2;
-  
+
   /* non-critical apperance styles */
   height: 30px;
   width: 30px;
@@ -194,14 +205,28 @@ label[for="nav-trigger"] {
   justify-content: space-between;
   position: relative;
 	z-index:100000;
+  padding: 1em;
+  max-width: 1200px;
+  margin: 0 auto;
+
+  .links a {
+    text-transform: uppercase;
+    color: $black;
+  }
+
 
 }
+
 
 .footer-social-links{
 
 
   li {
     display:inline;
+  }
+
+  li a {
+    color: $black;
   }
 
 }
@@ -216,7 +241,7 @@ label[for="nav-trigger"] {
 	font-size: .8em;
 	font-family: Times, serif;
 	z-index: 10000;
-	
+
 }
 
 
@@ -233,9 +258,9 @@ body {
   .desktop-nav-container {
     display: none;
 
-  }  
+  }
 
-
-
+  .mobile-header-logo {
+    display: block;
+  }
 }
-

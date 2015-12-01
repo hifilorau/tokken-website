@@ -1,25 +1,24 @@
 
-$font-video:'Press Start 2P', cursive; 
+$font-video:'Press Start 2P', cursive;
 $font-two:'Ubuntu', sans-serif;
 $token-yellow: #FED860;
 $font-main: 'Ubuntu', sans-serif;
-$main-color: #188C9D;
-$secondary-color: #D0280B;
-$tertiary-color: rgb(170,43, 105);
+$main-color: #00E79B;
+$secondary-color: #0F9A6D;
+$tertiary-color: #29BF97;
 $teritary-transparent: rgba(170,43,105, .4);
-$main-transparent: rgba(24,140,157,.3);
-
-
-
+$main-transparent: rgba(0,231,155, .3);
+$black: #5B5B5B;
 
 body {
-    font-family: sans-serif;
+    font-family: 'Raleway';
     line-height: 1.4;
     background: #FFF;
-    color: #444;
+    color: #5B5B5B;
+    /*color: #0F9A6D;*/
 }
 
-h1 { font-size: 2em; margin: 0;  }
+h1 { font-size: 2em; margin: 0; font-family: 'Raleway';  }
 h2 { font-size: 1.5em; margin: .75em 0 }
 h3 { font-size: 1.17em; margin: .83em 0 }
 h5 { font-size: .83em; margin: 1.5em 0 }
@@ -46,6 +45,26 @@ a {
 	color: white;
 }
 
-//.green {
-//	color:lawngreen;
-//}
+.tokken-button {
+	padding: .5em 1em;
+	font-size: .8em;
+	color: white;
+	display: inline-block;
+	margin-top:.9em;
+	transition: background-color 1s ease;
+	background-color: $main-color;
+  /*background-image: url('https://s3-us-west-2.amazonaws.com/tokken/pattern-block.png');*/
+  background-repeat: repeat;
+  background-size: 40px;
+  text-transform: uppercase;
+  font-weight: 700;
+}
+
+.tokken-button:hover {
+	background-color: $secondary-color;
+}
+
+
+.secondary-color {
+  background-color: $secondary-color;
+}

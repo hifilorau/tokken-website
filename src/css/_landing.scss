@@ -2,10 +2,9 @@
 
 #big-video {
     position: relative;
-    background: #000;
+    background:white;
     overflow: hidden;
-    height: 540vh;
-	
+    min-height: 500vh;
 }
 
 #big-video .video {
@@ -20,8 +19,8 @@
 
 #big-video video {
     position: absolute;
-    width: 100%;
-    height: 100%;
+    width: 140%;
+    height: auto;
     top: 0;
     left: 0;
 }
@@ -37,9 +36,13 @@
     background-size: auto 100%;
 }
 
+
+
+///// site  starts hero-image-container
+
 .hero-content-container {
 	position: absolute;
-	top: 37vh;
+	top: 0;
 	left:50%;
 	z-index: 100;
 	transform: translate(-50%);
@@ -49,9 +52,10 @@
 	h1 {
 	margin-bottom: .25em;
 	color: white;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'Raleway';
 	font-weight: 400;
-	font-size: 1.8em;
+	font-size: 1.7em;
+  text-transform:uppercase;
 //	height: 100%;
 
 	}
@@ -62,42 +66,55 @@
 	font-size: 1.5em;
 	color: white;
 	padding: 0 2em;
-	max-width: 75vw;
-	margin: 0 auto;  
+	max-width: 100vw;
+	margin: 0 auto;
+  text-align:center;
+  display: flex;
+  flex-direction:column;
+  justify-content:center;
 }
 
-.kickstarter-link {
-	padding: .5em 1em;
-	font-size: .8em;
-	color: white;
-	display: inline-block;
-	margin-top:.3em;
-	transition: background-color 1s ease;
-	background-color: $tertiary-color;
+.hero-logo {
+  width: 200px;
+  margin: 0 auto;
+
 }
 
-.kickstarter-link:hover {
-	background-color: $main-transparent;
+.section-1 {
+  background-color: white;
+}
+.section-1 h1 {
+  color: $black;
+  padding-top: .5em;
 }
 
 .section-2 {
 	top: 700px;
-//	position: absolute;
+  color: #444;
+  background-color: white;
+
+/*//	position: absolute;*/
 }
 
 .section-3 {
 	top: 1400px;
+  background-color: $secondary-color;
 }
 
 .section-4 {
 	font-size: .9em;
 	position: relative;
-	padding-top: 4em;
-	height: 100vh;
+	/*padding-top: 2em;*/
+	height: 80vh;
+}
+
+
+.section-5 {
+  /*background-color: #444;*/
 }
 
 .form-content-wrap {
-	margin-top: 18em;
+	/*margin-top: 18em;*/
 }
 
 .sign-up-form-1 {
@@ -110,14 +127,14 @@
 		margin: 0 .5em .5em 0;
 		border-radius:.1em;
 		width: 13em;
-		border: $main-color 1px solid;
+		border: $secondary-color 1px solid;
 		font-family: 'Raleway', sans-serif;
 //		outline: #AA2B69;
 	}
-	
-		textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, button:focus {   
-    border-color: rgba(170, 43, 105, 0.8);
-    box-shadow: 0 1px 1px rgba(170, 43, 105, 0.075) inset, 0 0 8px rgba(170, 43, 105, 0.6);
+
+		textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, button:focus {
+    border-color: $main-color;
+    /*box-shadow: 0 1px 1px rgba(170, 43, 105, 0.075) inset, 0 0 8px rgba(170, 43, 105, 0.6);*/
     outline: 0 none;
 		}
 	button {
@@ -128,27 +145,29 @@
 	font-size: 1.1em;
 	border-radius:.1em;
 	font-family: 'Raleway', sans-serif;
-	transition: 1s ease background-color;	
+	transition: 1s ease background-color;
 	}
 	button:hover {
 	background-color:$main-color;
 	}
 }
 
-	
-	
-	
-
 
 @media screen and (max-width: 887px) {
 	.hero-container {
 		h1, p {
-				text-align: center;	
+				text-align: center;
 		}
-		
+
 		.hero-image-container {
 			margin-right: 0;
 		}
-	
+
 	}
+}
+
+@media screen and (max-width: 604px) {
+  #big-video video {
+    width: 320%;
+  }
 }

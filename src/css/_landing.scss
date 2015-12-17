@@ -4,17 +4,11 @@
     position: relative;
     background:white;
     overflow: hidden;
-    min-height: 500vh;
+    /*min-height:50vh;*/
 }
 
 #big-video .video {
-    z-index: 1;
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 0;
-    padding-bottom: 56.25%;
+
 }
 
 #big-video video {
@@ -41,7 +35,7 @@
 ///// site  starts hero-image-container
 
 .hero-content-container {
-	position: absolute;
+	position:relative;
 	top: 0;
 	left:50%;
 	z-index: 100;
@@ -61,8 +55,8 @@
 	}
 }
 
-.section-1, .section-2, .section-3,  .section-4, .section-5 {
-	height: 100vh;
+.section-1, .section-2, .section-3,  .section-4, .section-5, .section-steps {
+	min-height: 80vh;
 	font-size: 1.5em;
 	color: white;
 	padding: 0 2em;
@@ -80,38 +74,132 @@
 
 }
 
+
+.phone-wrapper, .hero-copy {
+  padding: 3em;
+}
+
+
+.hero-copy {
+  padding-top: 5em;
+}
+
 .section-1 {
   background-color: white;
+  padding-top: 4em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  min-height: 100vh;
 }
 .section-1 h1 {
   color: $black;
   padding-top: .5em;
 }
 
-.section-2 {
-	top: 700px;
-  color: #444;
-  background-color: white;
-
-/*//	position: absolute;*/
+.step-number-wrapper {
+  display: table-cell;
+  position: relative;
+  background-color: $main-color;
+  /*padding: .5em;*/
+  margin-right: 1em;
+  color: $black;
+  width: 50px;
+  height: 50px;
+  text-align: center;
+  font-weight: 700;
+  font-size: 1.2em;
+  /*padding-top: .4em;*/
+  border-radius: .2em;
+  margin-right: 1em;
+  /*float: left;*/
 }
 
-.section-3 {
-	top: 1400px;
-  background-color: $secondary-color;
+.step-number {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
+
+
+.step-description {
+  display: table-cell;
+  padding-left: 1em;
+  font-size: .8em;
+  color: $black;
+  vertical-align: middle;
+  /*clear: right;*/
+
+}
+
+
+
 
 .section-4 {
 	font-size: .9em;
 	position: relative;
 	/*padding-top: 2em;*/
-	height: 80vh;
+
 }
 
+.section-5,  .section-steps{
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  /*min-height: 100vh;*/
+  padding-top: 5em;
+  color: white;
+  position: relative;
+}
 
 .section-5 {
-  /*background-color: #444;*/
+  background:url('https://s3-us-west-2.amazonaws.com/tokken/Top+Panel+BKG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+   background-attachment: fixed;
+   background-position: center;
+  /*width: 100%*/
 }
+
+.section-steps {
+  background-color: white;
+  color: $black;
+  padding-top: 3em;
+}
+
+
+
+.double-phone, .benefits-list, .steps-list, .steps-phone {
+  display:inline-block;
+  align-items: baseline;
+  padding: 3em 4em;
+}
+
+.double-phone {}
+
+.steps-phone {
+  padding-top: 5em;
+}
+
+.benefits-list, .steps-list {
+  color: white;
+  text-align: left;
+  padding-top: 6em;
+  max-width: 420px;
+  font-size: .9em;
+}
+
+.benefits-list {
+  padding-top: 7em;
+}
+
+.steps-list li {
+  margin-bottom: .5em;
+}
+
 
 .form-content-wrap {
 	/*margin-top: 18em;*/
@@ -152,6 +240,64 @@
 	}
 }
 
+.hidden-button {
+  display: none;
+}
+
+@media screen and (max-width: 1066px) {
+  .steps-phone {
+    order: 2;
+  }
+  .steps-list {
+    padding-top:4em;
+  }
+
+
+}
+
+@media screen and (max-width: 1028px) {
+  .benefits-list {
+    padding-top: 2em;
+    padding-bottom: 1em;
+  }
+}
+
+@media screen and (max-width: 969px) {
+  .phone-wrapper {
+    order: 2;
+  }
+
+  .hidden-button {
+    display: block;
+    width: 9em;
+    margin: 2em auto;
+
+  }
+
+  .disapper-mobile {
+    display:none;
+  }
+
+  .phone-wrapper {
+    padding-top: 0em;
+  }
+  .hero-copy {
+    padding-bottom: 0em;
+    padding-top: 1em;
+  }
+}
+
+@media screen and (max-width: 937px) {
+  .benefits-list {
+    padding:2em 0 1em;
+  }
+}
+
+@media screen and (max-width: 894px) {
+  .steps-list {
+    padding-top: 6em;
+  }
+}
 
 @media screen and (max-width: 887px) {
 	.hero-container {
@@ -169,5 +315,19 @@
 @media screen and (max-width: 604px) {
   #big-video video {
     width: 320%;
+  }
+
+  .section-1 {
+    padding-top: 2em;
+  }
+
+  .section-header {
+    top: .5em;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .steps-list {
+    padding: 8em 0 0;
   }
 }

@@ -6,7 +6,7 @@ $font-main: 'Ubuntu', sans-serif;
 .desktop-nav-container {
   position: absolute;
 	background-color: green;
-	min-height: 90px;
+	min-height: 70px;
 	top: 0;
 	left: 0;
 	right: 0;
@@ -17,25 +17,31 @@ $font-main: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
-	min-height: 90px;
+	min-height: 70px;
 	position: relative;
   z-index: 1000;
+  background-color: white;
+  width: 100%;
+  transition: 1s;
 //	max-width: 46rem;
 //	padding-left: 8%;
 //	float: right;
 //	margin-right: 90px;
 }
 
+
+
 .desk-nav-item {
-		margin-top: 45px;
+		margin-top: 27px;
 //	  padding-left: 6em;
 	a{
   	font-family: 'Raleway';
-		color: $tertiary-color;
-		font-size: 1.2em;
-		margin-right: 4em;
+		color: $black;
+		font-size: .8em;
+    letter-spacing: 2px;
+		margin-right: 3rem;
 		font-weight: 400;
-		text-transform: uppercase;
+		/*text-transform: uppercase;*/
 		transition: color 1s ease;
 	}
 
@@ -47,7 +53,11 @@ $font-main: 'Ubuntu', sans-serif;
 .desk-nav-item:first-child {
 	margin-right: auto;
 	float: left;
-	margin-left: 4em;
+	margin-left: 3em;
+}
+
+.desk-nav-item:last-child a {
+  font-weight: 800;
 }
 
 .nav-logo {
@@ -55,8 +65,8 @@ $font-main: 'Ubuntu', sans-serif;
 //	float: left;
 //	margin-left: 35px;
 	img {
-		margin-top: -25px;
-		height: 40px;
+		margin-top: -5px;
+		height: 25px;
 		width: auto;
 	}
 }
@@ -213,7 +223,13 @@ label[for="nav-trigger"] {
     text-transform: uppercase;
     color: $black;
   }
+  .links {
+    display: flex;
+  }
 
+  .links li {
+    margin: 0 .5em;
+  }
 
 }
 
@@ -261,6 +277,6 @@ body {
   }
 
   .mobile-header-logo {
-    display: block;
+    /*display: block;*/
   }
 }

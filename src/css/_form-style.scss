@@ -1,6 +1,13 @@
+.form-wrapper {
+  padding: 8em 0 4em;
+}
+
+.signup-title {
+  color: white;
+}
 .signup-form {
   max-width: 25em;
-  margin: 8em auto 4em;
+  margin: 0 auto;
   border: $main-color 1px solid;
   border-radius: .3em;
   padding: 3em;

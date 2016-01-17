@@ -1,36 +1,5 @@
 
 
-#big-video {
-    position: relative;
-    background:white;
-    overflow: hidden;
-    /*min-height:50vh;*/
-}
-
-#big-video .video {
-
-}
-
-#big-video video {
-    position: absolute;
-    width: 140%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-#big-video .video-element {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-}
-
-
 
 ///// site  starts hero-image-container
 
@@ -82,6 +51,15 @@
 
 .hero-copy {
   padding-top: 5em;
+}
+
+.header-2 {
+  display: block;
+  font-size: .5em;
+  text-transform: none;
+  /*font-family:'Amatic SC', Helvetica, Sans-serif;*/
+  margin-top: -05px;
+	font-weight: 300;
 }
 
 .section-1 {
@@ -166,6 +144,7 @@
 
 .section-steps {
   background-color: white;
+	background-size: cover;
   color: $black;
   padding-top: 3em;
 }
@@ -181,7 +160,7 @@
 .double-phone {}
 
 .steps-phone {
-  padding-top: 5em;
+  padding-top: 4em;
 }
 
 .benefits-list, .steps-list {
@@ -192,8 +171,54 @@
   font-size: .9em;
 }
 
+.steps-list {
+  padding-top: 7em;
+}
+
 .benefits-list {
   padding-top: 7em;
+	/*font-size: 1em;*/
+	font-weight: 700;
+	padding-bottom: 35px;
+	li {
+		position: relative;
+	}
+}
+
+.space-right {
+	position: absolute;
+	top: -15px;
+	left: -45px;
+	/*display: inline-block;*/
+	font-size: 1.3em;
+	margin-right: .5em;
+	margin-top: .3em;
+	font-weight: 300;
+}
+
+.download-button {
+	background-color: grey;
+	border-radius: .3em;
+	width: 160px;
+	height: 60px;
+	display: inline-block;
+	position: relative;
+	color: white;
+	margin-right: 1em;
+	margin-bottom: .5em;
+}
+
+.download-icon {
+	position: absolute;
+	top: 16px;
+	left: 9px;
+	font-size: .8em;
+}
+
+.download-text {
+	margin-top: .5em;
+	margin-left: 1.1em;
+	font-size: .7em;
 }
 
 .steps-list li {
@@ -206,6 +231,9 @@
 }
 
 .sign-up-form-1 {
+	margin: 0 auto;
+	max-width: 90em;
+	text-align: center !important;
 	input {
 		padding: .7em .5em;
 		border: none;
@@ -217,7 +245,38 @@
 		width: 13em;
 		border: $secondary-color 1px solid;
 		font-family: 'Raleway', sans-serif;
+    color: white;
 //		outline: #AA2B69;
+	}
+
+	///// newsletter form
+
+	/*.mce_inline_error {
+		position: absolute;
+	}*/
+
+	.mc-field-gropu label {
+    text-align: left !important;
+}
+	#mc-embedded-subscribe {
+		display: inline-block;
+	}
+
+	#mc_embed_signup form {
+    display: block;
+    position: relative;
+    text-align: left;
+    padding: 10px 0 10px 0;
+}
+
+	.mc-field-group {
+		input {
+			border-color: $main-color !important;
+		}
+		width: 16em !important;
+		display:inline-block !important;
+		clear: auto;
+		margin: .75em;
 	}
 
 		textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, button:focus {
@@ -225,9 +284,9 @@
     /*box-shadow: 0 1px 1px rgba(170, 43, 105, 0.075) inset, 0 0 8px rgba(170, 43, 105, 0.6);*/
     outline: 0 none;
 		}
-	button {
+	button, .submit {
 	 background-color: $tertiary-color;
-	 border: none;
+	 border: none !important;
 	 color: white;
 	padding: .7em 1.5em;
 	font-size: 1.1em;
@@ -240,9 +299,56 @@
 	}
 }
 
+
 .hidden-button {
   display: none;
 }
+
+
+.submit {
+	margin: 0 auto !important;
+	width: 15em !important;
+}
+
+
+//// smoke video shit
+.section-4 {
+  min-height: auto;
+  padding: 5em 0 7em;
+	background: #222;
+}
+
+
+#big-video {
+    position: relative;
+    background:white;
+    overflow: hidden;
+    /*min-height:50vh;*/
+}
+
+#big-video .video {
+
+}
+
+#big-video video {
+    position: absolute;
+    width: 140%;
+    height: auto;
+    top: 0;
+    left: 0;
+}
+
+#big-video .video-element {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+    background-size: auto 100%;
+}
+
 
 @media screen and (max-width: 1066px) {
   .steps-phone {
@@ -324,6 +430,15 @@
   .section-header {
     top: .5em;
   }
+
+
+	.section-4 {
+		background: #222;
+	}
+
+	.benefits-list {
+		margin-left: 1em;
+	}
 }
 
 @media screen and (max-width: 500px) {

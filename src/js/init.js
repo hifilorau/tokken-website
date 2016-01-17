@@ -1,2 +1,3 @@
-app.hamburgerMenu();
 app.templateLoad();
+app.hamburgerMenu();
+app.stickyNav();

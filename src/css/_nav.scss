@@ -5,7 +5,6 @@ $font-main: 'Ubuntu', sans-serif;
 
 .desktop-nav-container {
   position: absolute;
-	background-color: green;
 	min-height: 70px;
 	top: 0;
 	left: 0;
@@ -23,10 +22,6 @@ $font-main: 'Ubuntu', sans-serif;
   background-color: white;
   width: 100%;
   transition: 1s;
-//	max-width: 46rem;
-//	padding-left: 8%;
-//	float: right;
-//	margin-right: 90px;
 }
 
 
@@ -66,8 +61,8 @@ $font-main: 'Ubuntu', sans-serif;
 //	margin-left: 35px;
 	img {
 		margin-top: -5px;
-		height: 25px;
-		width: auto;
+		height: auto;
+		width: 90px;
 	}
 }
 
@@ -105,6 +100,7 @@ $font-main: 'Ubuntu', sans-serif;
   bottom: 0;
   left: 0;
   z-index: 0;
+  background: $main-color;
 
   /* non-critical appearance styles */
   list-style: none;
@@ -129,21 +125,29 @@ $font-main: 'Ubuntu', sans-serif;
   width: 200px;
   border-top: 1px solid #111;
   border-bottom: 1px solid #000;
+  background-color: $secondary-color;
 }
 
 .nav-item a {
   /* non-critical appearance styles */
   display: block;
   padding: 1em;
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);
+  /*background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(0,0,0,0.65) 100%);*/
   color: white;
-  font-size: 1.2em;
+  font-size: 1.1em;
   text-decoration: none;
+  text-transform: uppercase;
   transition: color 0.2s, background 0.5s;
+  font-weight: 400;
+  font-family: 'Raleway';
+  letter-spacing: 1px;
+   span {
+     text-transform: lowercase;
+     margin-right: .4em;
+   }
 }
 
 .nav-item a:hover {
-  color: #c74438;
   background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
 }
 
@@ -222,6 +226,7 @@ label[for="nav-trigger"] {
   .links a {
     text-transform: uppercase;
     color: $black;
+
   }
   .links {
     display: flex;
@@ -243,11 +248,17 @@ label[for="nav-trigger"] {
 
   li a {
     color: $black;
+    font-size: 1.4em;
   }
 
 }
 
-
+.footer-section-2 {
+  position: absolute;
+  bottom: 10px;
+  left: 50%;
+  transform: translate(-50%);
+}
 .copyright {
 	position: absolute;
 	color: white;
@@ -274,6 +285,11 @@ body {
   .desktop-nav-container {
     display: none;
 
+  }
+
+  .footer-section-2 {
+    bottom: 0;
+    font-size: .8em;
   }
 
   .mobile-header-logo {

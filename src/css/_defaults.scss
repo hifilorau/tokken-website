@@ -16,6 +16,7 @@ body {
     line-height: 1.4;
     background: #FFF;
     color: #5B5B5B;
+    overflow-x: hidden;
     /*color: #0F9A6D;*/
 }
 
@@ -79,4 +80,8 @@ a {
 
 .secondary-color {
   background-color: $secondary-color;
+}
+
+.icon {
+  font-family: winston-wolfe;
 }

@@ -281,6 +281,7 @@
 		display:inline-block !important;
 		clear: auto;
 		margin: .75em;
+		vertical-align: auto;
 	}
 
 		textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, button:focus {
@@ -289,14 +290,14 @@
     outline: 0 none;
 		}
 	button, .submit {
-	 background-color: $tertiary-color;
-	 border: none !important;
-	 color: white;
-	padding: .7em 1.5em;
-	font-size: 1.1em;
-	border-radius:.1em;
-	font-family: 'Raleway', sans-serif;
-	transition: 1s ease background-color;
+		background-color: $tertiary-color;
+		border: none !important;
+		color: white;
+		padding: .7em 1.5em;
+		font-size: 1.1em;
+		border-radius:.1em;
+		font-family: 'Raleway', sans-serif;
+		transition: 1s ease background-color;
 	}
 	button:hover {
 	background-color:$main-color;
@@ -315,8 +316,9 @@
 
 
 .submit {
-	margin: 0 auto !important;
+	margin: 15px auto !important;
 	width: 15em !important;
+	/*vertical-align: top;*/
 }
 
 

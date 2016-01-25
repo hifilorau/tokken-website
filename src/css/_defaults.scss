@@ -59,13 +59,25 @@ a {
 	font-size: .8em;
 	color: white;
 	display: inline-block;
-	margin-top:.9em;
-	transition: background-color 1s ease;
+	transition: 1s ease;
 	background-color: $secondary-color;
   background-repeat: repeat;
   background-size: 40px;
   text-transform: uppercase;
   font-weight: 700;
+  animation: pulse 3s infinite;
+  animation-timing-function: ease-in;
+  animation-direction: alternate-reverse;
+}
+
+
+@keyframes pulse {
+  0% {
+    background-color: $main-color;
+  }
+  100% {
+    background-color: $secondary-color;
+  }
 }
 
 .button {
@@ -75,7 +87,9 @@ a {
 }
 
 .tokken-button:hover {
+  animation: none;
 	background-color: $main-color;
+  transition: 1s ease;
 }
 
 .secondary-color {

@@ -3,20 +3,109 @@
 }
 
 .info-section {
-  min-height: 75vh;
+  /*min-height: 75vh;*/
   /*display: flex;
   /*flex-wrap: wrap;
   flex-direction: row;
   justify-content: space-around;
   padding-top: 6em;*/
-  overflow: hidden;
+    overflow: hidden;
 }
 
 .info-content-wrapper {
   position: relative;
-  max-width: 1400px;
+  max-width: 1080px;
   margin: 0 auto;
+  font-size: 0;
+  p {font-size:1.1rem;}
+  h1 {font-size: 2.1rem;}
 }
+
+.info-left-side {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+}
+
+.info-right-side {
+    width: 50%;
+    display: inline-block;
+    box-sizing: border-box;
+    vertical-align: middle;
+
+    .info-image-wrapper {
+        /*max-height: 75%;*/
+        overflow: hidden;
+    }
+
+    img {
+        height: 100%;
+        width: 100%;
+        display: block;
+        position: relative;
+        bottom: 0;
+
+        /*max-height: 500px;
+        max-width: 500px;*/
+    }
+
+    .img-phone {
+      right: -220px;
+      height: 90%;
+      width: 80%;
+      top: 120px;
+    }
+
+
+    .img-works {
+        right: -115px;
+        bottom: -20px;
+        height: 110%;
+        width: 110%;
+
+    }
+    .img-funding {
+        bottom: -50px;
+        right: -135px;
+    }
+    .img-wtdwt {
+        bottom: -40px;
+        right: -115px;
+    }
+    .img-comp {
+        bottom: -140px;
+        right: -145px;
+    }
+    .img-tech  {
+        bottom: -25px;
+        right: -135px;
+    }
+    .img-risk  {
+        bottom: -65px;
+        right: -135px;
+    }
+}
+
+.section-wtdwt {
+    max-height: 65vh;
+    .cw-wtdwt {
+        position:relative;
+        top: -50px;
+    }
+}
+
+.section-comp {
+    max-height: 65vh;
+    .cw-comp {
+        position:relative;
+        top: -100px;
+    }
+}
+
+
+
+.phone-wrapper
 
 .light-weight {
   font-weight:300;
@@ -57,91 +146,11 @@
 }
 
 
-.info-left-side {
-  max-width: 650px;
-  position: absolute;
-  top: 120px;
-  left: 95px;
-  font-size: 1.2em;
-  h1 {
 
-  }
-}
 
-.i-f-l-alt {
-  max-width: 450px;
-}
-
-.info-right-side {
-  position: absolute;
-  right: -20px;
-  top: 90px;
-}
-
-.i-f-s-alt {
-  top: 55px;
-  right: -50px;
-}
-
-.i-f-s-3 {
-  top: -5px;
-  right: -20px;
-}
-
-.i-f-s-4 {
-  top: 0px;
-  right:0px;
-}
-
-.i-f-s-5 {
-  top: 30px;
-  right:-30px;
-}
-
-.i-f-s-6 {
-  top: 50px;
-  right:-35px;
-}
-
-.i-f-s-7 {
-  top: 50px;
-  right:0px;
-}
 
 .info-ul {
   color: white;
 }
 
 // images
-
-.info-phone {
-  width: 430px;
-}
-
-.info-works {
-  width: 710px;
-}
-
-.info-funding {
-  width: 650px;
-}
-
-.info-where {
-  width: 750px;
-}
-
-.info-what-to-do {
-  width: 1100px;
-}
-
-.info-comp {
-  width: 650px;
-}
-
-.info-tech {
-  width: 600px;
-}
-
-.info-risk {
-  width: 550px;
-}

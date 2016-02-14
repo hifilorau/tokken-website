@@ -122,6 +122,12 @@
 .section-4 {
 	font-size: .9em;
 	position: relative;
+	background-image: url('https://s3-us-west-2.amazonaws.com/tokken/tokken_bottom.png');
+	background-attachment: fixed;
+	background-size: 100% 100%;
+	background-position: center;
+	background-repeat: no-repeat;
+	margin-top: -8px;
 	/*padding-top: 2em;*/
 
 }
@@ -243,9 +249,9 @@
 		border: none;
 		display: inline-block;
 		font-size: 1.1em;
-		background-color: rgba(24,140,146,.2);
+		background-color: rgba(0,0,0,.7);
 		margin: 0 .5em .5em 0;
-		border-radius:.1em;
+		border-radius:.2em;
 		width: 13em;
 		border: $secondary-color 1px solid;
 		font-family: 'Raleway', sans-serif;
@@ -259,7 +265,7 @@
 		position: absolute;
 	}*/
 
-	.mc-field-gropu label {
+	.mc-field-group label {
     text-align: left !important;
 }
 	#mc-embedded-subscribe {
@@ -290,18 +296,22 @@
     outline: 0 none;
 		}
 	button, .submit {
-		background-color: $tertiary-color;
+		background-color: rgba(44, 119, 191, .7);
 		border: none !important;
 		color: white;
 		padding: .7em 1.5em;
 		font-size: 1.1em;
-		border-radius:.1em;
+		border-radius:.2em;
 		font-family: 'Raleway', sans-serif;
 		transition: 1s ease background-color;
+		cursor: pointer;
+		font-weight: 800;
+		text-transform: uppercase;
 	}
-	button:hover {
-	background-color:$main-color;
+	button:hover, .submit:hover {
+	background-color:$main-transparent;
 	}
+
 }
 
 #mc_embed_signup div.mce_inline_error {
@@ -323,11 +333,10 @@
 
 
 //// smoke video shit
-.section-4 {
+/*.section-4 {
   min-height: auto;
   padding: 5em 0 7em;
-	background: #222;
-}
+}*/
 
 
 #big-video {
@@ -444,7 +453,7 @@
 
 
 	.section-4 {
-		background: #222;
+		/*background: #222;*/
 	}
 
 	.benefits-list {

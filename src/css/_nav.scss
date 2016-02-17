@@ -1,7 +1,4 @@
 
-/*desktop nav */
-$font-video:'Press Start 2P', cursive;
-$font-main: 'Ubuntu', sans-serif;
 
 .desktop-nav-container {
   position: absolute;
@@ -16,53 +13,61 @@ $font-main: 'Ubuntu', sans-serif;
   display: flex;
   flex-direction: row;
   justify-content: flex-start;
-	min-height: 70px;
-	position: relative;
+  /*min-height: 60px;*/
+  position: fixed;
   z-index: 1000;
-  background-color: white;
+  background-color: #5B5B5B;
   width: 100%;
   transition: 1s;
+  padding-bottom: .9em;
+}
+
+.tokken-fold-logo {
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 1000;
+    width:80px;
 }
 
 
-
 .desk-nav-item {
-		margin-top: 27px;
+		margin-top: 20px;
 //	  padding-left: 6em;
 	a{
-  	font-family: 'Raleway';
-		color: $black;
-		font-size: .8em;
-    letter-spacing: 2px;
+  	font-family: 'galano_grotesque_light';
+		color: white;
+		font-size: 1.2em;
 		margin-right: 3rem;
 		font-weight: 400;
-		/*text-transform: uppercase;*/
 		transition: color 1s ease;
+        text-transform: uppercase;
 	}
 
 	a:hover {
-		color: rgba(24,144,157,.5);
+		color: $main-color;
 	}
 }
 
 .desk-nav-item:first-child {
-	margin-right: auto;
-	float: left;
 	margin-left: 3em;
 }
 
 .desk-nav-item:last-child a {
   font-weight: 800;
+  margin-right: 100px;
 }
 
 .nav-logo {
 	display: inline-block;
-//	float: left;
-//	margin-left: 35px;
 	img {
-		margin-top: -5px;
+		margin-top: -9px;
 		height: auto;
-		width: 90px;
+		width: 170px;
+        position: absolute;
+        right: 100px;
+        top: 23px;
+        z-index: 10000;
 	}
 }
 
@@ -104,7 +109,7 @@ $font-main: 'Ubuntu', sans-serif;
 
   /* non-critical appearance styles */
   list-style: none;
-  background: #111;
+  background: #5B5B5B;
   display: none;
 }
 
@@ -123,8 +128,8 @@ $font-main: 'Ubuntu', sans-serif;
 .nav-item {
   /* non-critical appearance styles */
   width: 200px;
-  border-top: 1px solid #111;
-  border-bottom: 1px solid #000;
+  border-top: 1px solid #5B5B5B;
+  border-bottom: 1px solid #5B5B5B;
   background-color: $secondary-color;
 }
 
@@ -148,7 +153,7 @@ $font-main: 'Ubuntu', sans-serif;
 }
 
 .nav-item a:hover {
-  background: linear-gradient(135deg, rgba(0,0,0,0) 0%,rgba(75,20,20,0.65) 100%);
+  background-color: $main-color;
 }
 
 /* Site Wrapper - Everything that isn't navigation */
@@ -222,10 +227,12 @@ label[for="nav-trigger"] {
   padding: 1em;
   max-width: 1200px;
   margin: 0 auto;
+  color: white;
+
 
   .links a {
     text-transform: uppercase;
-    color: $black;
+    color: white;
 
   }
   .links {
@@ -247,7 +254,7 @@ label[for="nav-trigger"] {
   }
 
   li a {
-    color: $black;
+    color: white;
     font-size: 1.4em;
   }
 
@@ -268,7 +275,12 @@ label[for="nav-trigger"] {
 	font-size: .8em;
 	font-family: Times, serif;
 	z-index: 10000;
+}
 
+.footer-copy {
+    font-family: winston-wolfe;
+    font-size: .7em;
+    vertical-align: super;
 }
 
 

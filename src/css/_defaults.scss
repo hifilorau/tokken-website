@@ -1,8 +1,8 @@
 
 $font-video:'Press Start 2P', cursive;
 $font-two:'Ubuntu', sans-serif;
+$font-main: 'galano_grotesque_light';
 $token-yellow: #FED860;
-$font-main: 'Ubuntu', sans-serif;
 $main-color: #00E79B;
 $secondary-color: #0F9A6D;
 $tertiary-color: #29BF97;
@@ -11,71 +11,92 @@ $main-transparent: rgba(0,231,155, .3);
 $black: #5B5B5B;
 $tokken-grey: #5B5B5B;
 
+@font-face {
+    font-family: 'galano_grotesque_alt_demobold';
+    src: url('../fonts/galano_grotesque_alt_demo_bold-webfont.eot');
+    src: url('../fonts/galano_grotesque_alt_demo_bold-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/galano_grotesque_alt_demo_bold-webfont.woff2') format('woff2'),
+         url('../fonts/galano_grotesque_alt_demo_bold-webfont.woff') format('woff'),
+         url('../fonts/galano_grotesque_alt_demo_bold-webfont.ttf') format('truetype'),
+         url('../fonts/galano_grotesque_alt_demo_bold-webfont.svg#galano_grotesque_alt_demobold') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'galano_grotesque_light';
+    src: url('../fonts/rene_bieder_-_galano_grotesque_light-webfont.eot');
+    src: url('../fonts/rene_bieder_-_galano_grotesque_light-webfont.eot?#iefix') format('embedded-opentype'),
+         url('../fonts/rene_bieder_-_galano_grotesque_light-webfont.woff2') format('woff2'),
+         url('../fonts/rene_bieder_-_galano_grotesque_light-webfont.woff') format('woff'),
+         url('../fonts/rene_bieder_-_galano_grotesque_light-webfont.ttf') format('truetype'),
+         url('../fonts/rene_bieder_-_galano_grotesque_light-webfont.svg#galano_grotesque_light') format('svg');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+
+
 html {
     height: 100%;
     width: 100%;
 }
 
 body {
-    font-family: 'Raleway';
+    font-family: 'galano_grotesque_alt_demobold', 'Raleway';
     line-height: 1.4;
-    background: #FFF;
+    background: #5B5B5B;
     color: #5B5B5B;
     overflow-x: hidden;
     -webkit-font-smoothing: antialiased;
--moz-osx-font-smoothing: grayscale;
-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    font-smoothing: antialiased;
     /*color: #0F9A6D;*/
 }
 
-h1 { font-size: 2em; margin: 0; font-family: 'Raleway';  }
-h2 { font-size: 1.5em; margin: .75em 0 }
+h1 { font-size: 2em; margin: 0; font-family: 'galano_grotesque_light', 'Raleway'; font-weight: 400;  }
+h2 { font-size: 1.9em; margin: .25em 0; font-weight: 400; font-family: 'galano_grotesque_light';}
 h3 { font-size: 1.17em; margin: .83em 0 }
 h5 { font-size: .83em; margin: 1.5em 0 }
 h6 { font-size: .75em; margin: 1.67em 0 }
 h1, h2, h3, h4,
 h5, h6 {
-  font-weight: bolder
+  /*font-weight: bolder*/
 }
 
 p {
   line-height: 1.4em;
   margin-bottom: 1em;
+  font-weight: 400;
 }
 
 a {
   color: #00AAEE;
   text-decoration: none;
-	font-family: $font-main;
+  font-family: $font-main;
 }
 
-.section-header {
-  text-align:center;
-  /*text-transform: uppercase;*/
-  position: absolute;
-  top: 1.2em;
-  left: 50%;;
-  transform: translateX(-50%);
-}
+
 
 .white {
 	color: white;
 }
 
 .tokken-button {
-	padding: .5em 1em;
+	padding: .7em 1em;
 	font-size: .8em;
 	color: white;
 	display: inline-block;
 	transition: 1s ease;
-	background-color: $secondary-color;
-  background-repeat: repeat;
-  background-size: 40px;
-  text-transform: uppercase;
-  font-weight: 700;
-  animation: pulse 3s infinite;
-  animation-timing-function: ease-in;
-  animation-direction: alternate-reverse;
+	background-color: #5B5B5B;
+     background-repeat: repeat;
+      background-size: 40px;
+      text-transform: uppercase;
+      font-weight: 700;
+      border-radius: .3em;
+
 }
 
 
@@ -96,7 +117,7 @@ a {
 
 .tokken-button:hover {
   animation: none;
-	background-color: $main-color;
+	background-color: $secondary-color;
   transition: 1s ease;
 }
 

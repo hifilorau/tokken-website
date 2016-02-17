@@ -4,6 +4,9 @@
   display: flex;
   align-items: center;
   justify-content: center;
+  background: url('https://s3-us-west-2.amazonaws.com/tokken/tokken_bottom.png') no-repeat;
+  background-size: cover;
+  min-width: 335px;
 }
 
 
@@ -12,7 +15,7 @@
 .contact-form {
   margin: auto;
   width: 100%;
-  min-height: 77vh;
+  min-height: 95vh;
   text-align: center;
   position: relative;
   /*margin-top: 90px;*/
@@ -20,13 +23,17 @@
   // border-radius: .3em;
   padding: 3em;
   color: white;
-  background-color: rgb(43, 43, 43);
+  background-color: transparent;
   h1 {
     font-family: 'Raleway';
     font-weight: 400;
     text-transform: uppercase;
-
   }
+
+  .sign-up-form-1 .mc-field-group input {
+    height: 54px;
+    color: black;
+}
 
   input {
     display: block;
@@ -42,7 +49,7 @@
   }
 
   input[type="submit"]{
-    background-color: $tertiary-color;
+    background-color: $black;
     outline: 0;
     width: 13em;
     color: white;
@@ -71,6 +78,11 @@
 
  }
 
+ .contact-email {
+     color: $black;
+     font-family: 'galano_grotesque_alt_demobold';
+ }
+
  .submit {
     margin: 15px auto !important;
     width: 15em !important;
@@ -88,8 +100,10 @@
      padding-top: 2em;
    }
    p {
-     font-size: 1.1em;
+     font-size: 1.4em;
      margin-bottom: .3em;
+     font-family: 'galano_grotesque_light';
+     font-weight: 400;
    }
    .contact-info {
      margin-top: 3em;
@@ -97,9 +111,9 @@
      /*text-transform: uppercase;*/
    }
 
-   value {
+   /*value {
      color: white;
-   }
+   }*/
 
 }
 
@@ -111,22 +125,23 @@
  padding: .7em 1.5em;
  font-size: 1.1em;
  border-radius:.3em;
- font-family: 'Raleway', sans-serif;
+ /*font-family: 'Raleway', sans-serif;*/
  transition: 1s ease background-color;
  margin-bottom: 2em;
 }
 .contact-submit-button:hover {
-  background-color: $main-color;
+  background-color: $secondary-color;
 }
 
 .contact-social-container {
   position: absolute;
   top: 75px;
-  right: 15px;
+  left: 15px;
+
 }
 
 .contact-links {
-  color: $main-color;
+  color: $black;
   text-transform: uppercase;
 }
 
@@ -159,7 +174,7 @@
       border-left-bottom-radius: 0 !important;
       border-top-right-radius: .3em;;
       border-bottom-right-radius: .3em;
-      border: 1px solid $main-color !important;
+      /*border: 1px solid $main-color !important;*/
       box-sizing: border-box;
       border-left: none !important;
       /*padding: 1px;*/

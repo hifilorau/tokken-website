@@ -4,28 +4,24 @@
 ///// site  starts hero-image-container
 
 .hero-content-container {
-	position:relative;
-	top: 0;
-	left:50%;
-	z-index: 100;
-	transform: translate(-50%);
 	text-align: center;
 	width: 100%;
-	font-family: 'Raleway', sans-serif;
+	font-family: 'galano_grotesque_light', sans-serif;
+
 	h1 {
 	margin-bottom: .25em;
 	color: white;
-	font-family: 'Raleway';
+	font-family: 'galano_grotesque_light';
 	font-weight: 400;
-	font-size: 1.7em;
-  text-transform:uppercase;
+	font-size: 1.9em;
+	line-height: 1em;
 //	height: 100%;
 
 	}
 }
 
 .section-1, .section-2, .section-3,  .section-4, .section-5, .section-steps {
-	min-height: 80vh;
+	/*min-height: 0vh;*/
 	font-size: 1.5em;
 	color: white;
 	padding: 0 2em;
@@ -35,22 +31,45 @@
   display: flex;
   flex-direction:column;
   justify-content:center;
+  font-family: 'galano_grotesque_light';
+}
+
+.section-1 {
+  background:url('https://s3-us-west-2.amazonaws.com/tokken/Top+Panel+BKG.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  background-position-y: calc(100% - 200px);
+  padding-top: 5em;
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  justify-content: center;
+  height: 370px;
 }
 
 .hero-logo {
-  width: 200px;
-  margin: 0 auto;
+  width: 130%;
+  height: 130%;
+  margin: 25px auto;
 
 }
 
 
-.phone-wrapper, .hero-copy {
-  padding: 3em;
+.phone-wrapper, .hero-copy  {
+  padding-top: 2em;
+}
+
+.phone-wrapper {
+	margin-left: -75px;
 }
 
 
 .hero-copy {
-  padding-top: 5em;
+	text-align: left;
+	margin-left: 4em;
+	margin-top: 1em;
 }
 
 .header-2 {
@@ -59,21 +78,22 @@
   text-transform: none;
   /*font-family:'Amatic SC', Helvetica, Sans-serif;*/
   margin-top: -05px;
-	font-weight: 300;
+  font-weight: 300;
 }
 
-.section-1 {
-  background-color: white;
-  padding-top: 4em;
-  display: flex;
-  flex-wrap: wrap;
-  flex-direction: row;
-  justify-content: center;
-  min-height: 100vh;
-}
+
 .section-1 h1 {
-  color: $black;
+  color: white;
   padding-top: .5em;
+}
+
+.section-header {
+  text-align:left;
+  /*text-transform: uppercase;*/
+
+
+
+
 }
 
 .step-number-wrapper-cell {
@@ -82,7 +102,7 @@
 }
 
 .step-number-wrapper {
-	position: relative;
+  position: relative;
   background-color: $main-color;
   /*padding: .5em;*/
   margin-right: 1em;
@@ -110,7 +130,7 @@
   display: table-cell;
   padding-left: 1em;
   font-size: .8em;
-  color: $black;
+  color: white;
   vertical-align: middle;
   /*clear: right;*/
 
@@ -128,7 +148,14 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	margin-top: -8px;
-	/*padding-top: 2em;*/
+	min-height: 60vh;
+	padding: 2em 0;
+	h1 {
+		font-size: 2.7em;
+	}
+	.footer-social-links li a {
+		font-size: 3.7em;
+	}
 
 }
 
@@ -138,25 +165,30 @@
   flex-direction: row;
   justify-content: center;
   /*min-height: 100vh;*/
-  padding-top: 5em;
+  padding-top: 4em;
   color: white;
   position: relative;
 }
 
 .section-5 {
-  background:url('https://s3-us-west-2.amazonaws.com/tokken/Top+Panel+BKG.jpg');
-  background-size: cover;
-  background-repeat: no-repeat;
+	.section-header {
+		color: $main-color;
+		margin-left: -45px;
+	}
+   /*background:url('https://s3-us-west-2.amazonaws.com/tokken/Top+Panel+BKG.jpg');
+   background-size: cover;
+   background-repeat: no-repeat;
    background-attachment: fixed;
-   background-position: center;
+   background-position: center;*/
   /*width: 100%*/
 }
 
 .section-steps {
-  background-color: white;
-	background-size: cover;
-  color: $black;
-  padding-top: 3em;
+  background-color: #5B5B5B;
+  background-size: cover;
+  color: white;
+  padding-top: .5em;
+
 }
 
 
@@ -167,7 +199,6 @@
   padding: 3em 4em;
 }
 
-.double-phone {}
 
 .steps-phone {
   padding-top: 4em;
@@ -182,16 +213,15 @@
 }
 
 .steps-list {
-  padding-top: 7em;
+  padding-top: 4em;
 }
 
 .benefits-list {
-  padding-top: 7em;
-	/*font-size: 1em;*/
 	font-weight: 700;
 	padding-bottom: 35px;
 	li {
 		position: relative;
+		color: $black;
 	}
 }
 
@@ -207,22 +237,23 @@
 }
 
 .download-button {
-	background-color: grey;
+	background-color: $main-color;
 	border-radius: .3em;
-	width: 160px;
+	width: 190px;
 	height: 60px;
 	display: inline-block;
 	position: relative;
 	color: white;
 	margin-right: 1em;
 	margin-bottom: .5em;
+	font-family: 'galano_grotesque_alt_demobold';
 }
 
 .download-icon {
 	position: absolute;
-	top: 16px;
+	top: 6px;
 	left: 9px;
-	font-size: .8em;
+	font-size: 1.2em;
 }
 
 .download-text {
@@ -245,17 +276,16 @@
 	max-width: 90em;
 	text-align: center !important;
 	input {
-		padding: .7em .5em;
+		/*padding: .7em .5em;*/
 		border: none;
 		display: inline-block;
 		font-size: 1.1em;
 		background-color: rgba(0,0,0,.7);
-		margin: 0 .5em .5em 0;
+		/*margin: 0 .5em 0;*/
 		border-radius:.2em;
 		width: 13em;
-		border: $secondary-color 1px solid;
-		font-family: 'Raleway', sans-serif;
-    color: white;
+		font-family: 'galano_grotesque_light', sans-serif;
+    	color: white;
 //		outline: #AA2B69;
 	}
 
@@ -265,11 +295,10 @@
 		position: absolute;
 	}*/
 
-	.mc-field-group label {
-    text-align: left !important;
-}
+
 	#mc-embedded-subscribe {
 		display: inline-block;
+		vertical-align: center;
 	}
 
 	#mc_embed_signup form {
@@ -280,36 +309,54 @@
 }
 
 	.mc-field-group {
+		margin-top: 2px !important;
+		margin-right: -5px !important;
 		input {
-			border-color: $main-color !important;
+			/*border-color: $main-color !important;*/
+			background-color: white;
+			border: none !important;
+			height: 37px;
+			margin-top: 13px !important;
+			color: black;
+			border-top-right-radius: 0;
+			border-bottom-right-radius: 0;
 		}
-		width: 16em !important;
+
+		width: 22em !important;
 		display:inline-block !important;
-		clear: auto;
-		margin: .75em;
-		vertical-align: auto;
+		/*clear: auto;*/
+		/*margin: .75em;*/
+		vertical-align: top;
 	}
 
-		textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, button:focus {
-    border-color: $main-color;
+
+
+
+
+
+	textarea:focus, input:focus, input[type]:focus, .uneditable-input:focus, button:focus {
+    /*border-color: $main-color;*/
     /*box-shadow: 0 1px 1px rgba(170, 43, 105, 0.075) inset, 0 0 8px rgba(170, 43, 105, 0.6);*/
     outline: 0 none;
 		}
 	button, .submit {
-		background-color: rgba(44, 119, 191, .7);
+		background-color: #5B5B5B;
 		border: none !important;
 		color: white;
-		padding: .7em 1.5em;
+		/*padding: .7em 1.5em;*/
 		font-size: 1.1em;
 		border-radius:.2em;
-		font-family: 'Raleway', sans-serif;
+		font-family: 'galano_grotesque_alt_demobold', sans-serif;
 		transition: 1s ease background-color;
 		cursor: pointer;
 		font-weight: 800;
-		text-transform: uppercase;
+		height: 54px;
+		display: inline-block;
+		margin-left: -15px;
+		vertical-align: top;
 	}
 	button:hover, .submit:hover {
-	background-color:$main-transparent;
+	background-color:$secondary-color;
 	}
 
 }
@@ -332,42 +379,6 @@
 }
 
 
-//// smoke video shit
-/*.section-4 {
-  min-height: auto;
-  padding: 5em 0 7em;
-}*/
-
-
-#big-video {
-    position: relative;
-    background:white;
-    overflow: hidden;
-    /*min-height:50vh;*/
-}
-
-#big-video .video {
-
-}
-
-#big-video video {
-    position: absolute;
-    width: 140%;
-    height: auto;
-    top: 0;
-    left: 0;
-}
-
-#big-video .video-element {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    top: 0;
-    left: 0;
-    background-position: 50% 50%;
-    background-repeat: no-repeat;
-    background-size: auto 100%;
-}
 
 
 @media screen and (max-width: 1066px) {
@@ -377,9 +388,12 @@
   .steps-list {
     padding-top:4em;
   }
+}
 
+@media screen and (max-width: 1047px){
 
 }
+
 
 @media screen and (max-width: 1028px) {
   .benefits-list {
@@ -388,12 +402,12 @@
   }
 }
 
-@media screen and (max-width: 969px) {
-  .phone-wrapper {
+/*@media screen and (max-width: 969px) {*/
+  /*.phone-wrapper {
     order: 2;
-  }
+  }*/
 
-  .hidden-button {
+  /*.hidden-button {
     display: block;
     width: 9em;
     margin: 2em auto;
@@ -402,16 +416,16 @@
 
   .disapper-mobile {
     display:none;
-  }
+  }*/
 
-  .phone-wrapper {
+  /*.phone-wrapper {
     padding-top: 0em;
   }
   .hero-copy {
     padding-bottom: 0em;
     padding-top: 1em;
   }
-}
+}*/
 
 @media screen and (max-width: 937px) {
   .benefits-list {
@@ -419,11 +433,7 @@
   }
 }
 
-@media screen and (max-width: 894px) {
-  .steps-list {
-    padding-top: 6em;
-  }
-}
+
 
 @media screen and (max-width: 887px) {
 	.hero-container {
@@ -438,9 +448,41 @@
 	}
 }
 
+
+@media screen and (max-width: 810px) {
+	.section-1 { height: auto}
+	.phone-wrapper {
+		order: 2;
+		margin-left: 0px;
+		/*margin-right: 1em;*/
+}
+	.tokken-button {margin: 0 auto}
+	.hero-copy {text-align: center;
+		margin-left: 0;
+	}
+	.hero-logo {
+		width: 100%;
+		height: 100%;
+	}
+
+	.double-phone, .steps-phone {
+	  display:inline-block;
+	  align-items: baseline;
+	  padding: 3em 0em;
+	}
+}
+
 @media screen and (max-width: 604px) {
-  #big-video video {
-    width: 320%;
+  .hero-logo {
+	  /*margin-right: 4em;*/
+  }
+
+  .double-phone, .steps-phone {
+	  text-align: center;
+	  img {
+		  display: inline-block;
+		  margin: 0 auto;
+	  }
   }
 
   .section-1 {
@@ -451,18 +493,29 @@
     top: .5em;
   }
 
+  .section-4 {
+    padding: 4em 2em;
+  }
 
-	.section-4 {
-		/*background: #222;*/
+  .sign-up-form-1 .mc-field-group {
+    width: 16.7em !important;
+  }
+
+  .mc-field-group {
+	  input {
+		  border-top-right-radius: .3em !important;
+		  border-bottom-right-radius: .3em !important;
+	  }
+
+  }
+
+
+
+	.steps-list {
+		padding: 3em 0;
 	}
 
 	.benefits-list {
 		margin-left: 1em;
 	}
-}
-
-@media screen and (max-width: 500px) {
-  .steps-list {
-    padding: 8em 0 0;
-  }
 }

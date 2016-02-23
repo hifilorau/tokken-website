@@ -40,13 +40,13 @@
   background-repeat: no-repeat;
   background-attachment: fixed;
   background-position: center;
-  background-position-y: calc(100% - 200px);
+  background-position-y: calc(100% - 130px);
   padding-top: 5em;
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
   justify-content: center;
-  height: 370px;
+  height: 390px;
 }
 
 .hero-logo {
@@ -54,6 +54,52 @@
   height: 130%;
   margin: 25px auto;
 
+}
+
+ //// press section
+.press-banner {
+	display: flex;
+	flex-direction: row;
+	flex-wrap:wrap;
+	justify-content: center;
+	width: 60%;
+	margin-left: 35%;
+	/*background-color: grey;*/
+	position: relative;
+	padding: 1em 0;
+	h3 {
+		position: absolute;
+		font-weight: 400;
+		font-family: 'galano_grotesque_light';
+		top: 15px;
+		left: 50%;
+		transform:translate(-50%, -50%);
+	}
+
+	a {
+		height: 30px;
+		cursor:pointer;
+		display:inline-block;
+		margin: 3rem 1.7rem 0;
+
+	}
+	img {
+		height: 100%;
+		width: 100%;
+		display: inline-block;
+		opacity: 1;
+		transition: .3s ease-in;
+		min-width: 175px;
+		max-width:250px;
+	}
+	img:hover{
+		opacity: .6;
+	}
+
+	.nyt {
+		width: 125%;
+		height:125%;
+	}
 }
 
 
@@ -155,6 +201,7 @@
 	}
 	.footer-social-links li a {
 		font-size: 3.7em;
+		color: $black;
 	}
 
 }
@@ -171,16 +218,11 @@
 }
 
 .section-5 {
+	padding-top: 0em;
 	.section-header {
 		color: $main-color;
 		margin-left: -45px;
 	}
-   /*background:url('https://s3-us-west-2.amazonaws.com/tokken/Top+Panel+BKG.jpg');
-   background-size: cover;
-   background-repeat: no-repeat;
-   background-attachment: fixed;
-   background-position: center;*/
-  /*width: 100%*/
 }
 
 .section-steps {
@@ -207,7 +249,7 @@
 .benefits-list, .steps-list {
   color: white;
   text-align: left;
-  padding-top: 6em;
+  padding: 6em 2em 3em;
   max-width: 420px;
   font-size: .9em;
 }
@@ -391,14 +433,16 @@
 }
 
 @media screen and (max-width: 1047px){
-
+	.press-banner a {
+    margin: 3rem .5rem 0;
+}
 }
 
 
 @media screen and (max-width: 1028px) {
   .benefits-list {
-    padding-top: 2em;
-    padding-bottom: 1em;
+    padding: 2em  2em 1em;
+
   }
 }
 
@@ -431,6 +475,7 @@
   .benefits-list {
     padding:2em 0 1em;
   }
+
 }
 
 
@@ -438,24 +483,34 @@
 @media screen and (max-width: 887px) {
 	.hero-container {
 		h1, p {
-				text-align: center;
+			text-align: center;
 		}
 
 		.hero-image-container {
 			margin-right: 0;
 		}
-
 	}
+
 }
-
-
-@media screen and (max-width: 810px) {
-	.section-1 { height: auto}
+@media screen and (max-width: 849px) {
+	/*.press-banner {
+		margin: 0 auto;
+		width: 100%
+	}*/
 	.phone-wrapper {
 		order: 2;
 		margin-left: 0px;
-		/*margin-right: 1em;*/
+	}
+	.section-1 { height: auto}
 }
+
+@media screen and (max-width: 810px) {
+
+	.press-banner {
+		width: 100%;
+		margin:0 auto;
+	}
+
 	.tokken-button {margin: 0 auto}
 	.hero-copy {text-align: center;
 		margin-left: 0;
@@ -473,8 +528,8 @@
 }
 
 @media screen and (max-width: 604px) {
-  .hero-logo {
-	  /*margin-right: 4em;*/
+  .hero-copy {
+	 padding-top: 0em;
   }
 
   .double-phone, .steps-phone {

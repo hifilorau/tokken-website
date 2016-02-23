@@ -14,6 +14,7 @@ var src = {
   js:       srcDir + '/js/**/*.js',
   img:      srcDir + '/img/**/*',
   fonts:    srcDir + '/fonts/**/*',
+  datafiles:srcDir + '/datafiles/**/*',
   html:     srcDir + '/**/*.html',
   ejs:      [srcDir + '/**/*.ejs', '!' + srcDir + '/**/_*.ejs'],
   tests:    './test/**/*'
@@ -26,6 +27,7 @@ var dest = {
   js:       destDir + '/js',
   img:      destDir + '/img',
   fonts:    destDir + '/fonts',
+  datafiles:    destDir + '/datafiles',
   html:     destDir
 };
 

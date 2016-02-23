@@ -1,5 +1,5 @@
 app.stickyNav = function () {
-
+    console.log('yolo');
   //   setTimeout(function () {
   //
   //   $('.desktop-nav').sticky({

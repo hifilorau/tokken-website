@@ -3,7 +3,7 @@ var gulp = require('gulp'),
     config = require('../config'),
     connect = require('gulp-connect');
 
-gulp.task('assets', ['fonts', 'img']);
+gulp.task('assets', ['fonts', 'img', 'datafiles']);
 
 // fonts copies fonts to the destination
 gulp.task('fonts', function () {
@@ -16,5 +16,11 @@ gulp.task('fonts', function () {
 gulp.task('img', function () {
   return gulp.src(config.src.img)
     .pipe(gulp.dest(config.dest.img))
+    .pipe(connect.reload());
+});
+
+gulp.task('datafiles', function () {
+  return gulp.src(config.src.datafiles)
+    .pipe(gulp.dest(config.dest.datafiles))
     .pipe(connect.reload());
 });

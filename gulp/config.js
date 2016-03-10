@@ -27,7 +27,7 @@ var dest = {
   js:       destDir + '/js',
   img:      destDir + '/img',
   fonts:    destDir + '/fonts',
-  datafiles:    destDir + '/datafiles',
+  datafiles:destDir + '/datafiles',
   html:     destDir
 };
 
